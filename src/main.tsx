@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
 import "./index.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { routeTree } from "./routeTree.gen";
 
@@ -21,6 +22,7 @@ if (!rootElement.innerHTML) {
     <StrictMode>
       <RouterProvider router={router} />
       <Analytics />
+      <SpeedInsights />
     </StrictMode>,
   );
 }
