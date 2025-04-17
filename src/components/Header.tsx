@@ -5,24 +5,24 @@ import menuIcon from "../assets/images/icon-of-menu-from-header.svg";
 export function Header({ toggleAside }: { toggleAside: () => void }) {
   return (
     <>
-      <div className="flex justify-between items-center text-white">
+      <div className="flex items-center justify-between text-white">
         <div className="flex items-center gap-x-3.5">
-          <button className="p-1 cursor-pointer" onClick={toggleAside}>
+          <button className="cursor-pointer p-1" onClick={toggleAside}>
             <img src={menuIcon} alt="Icon of Menu" width={24} height={24} />
           </button>
           <Link
             to="/"
-            className="text-[22px] leading-7 font-medium tracking-minusOne"
+            className="tracking-minusOne text-[22px] leading-7 font-medium"
           >
             AZIZBEK<span className="text-customGreen">.UZ</span>
           </Link>
         </div>
         <nav className="flex items-center gap-x-3.5">
-          <ul className="hidden md:flex items-center gap-x-6 text-base">
+          <ul className="hidden items-center gap-x-6 text-base md:flex">
             <li>
               <Link
                 to="/"
-                className="pb-3 border-b-2 border-transparent [&.active]:border-customGreen hover:border-customGreen2 transition-all duration-300"
+                className="[&.active]:border-customGreen hover:border-customGreen2 border-b-2 border-transparent pb-3 transition-all duration-300"
               >
                 Home
               </Link>
@@ -30,7 +30,7 @@ export function Header({ toggleAside }: { toggleAside: () => void }) {
             <li>
               <Link
                 to="/about"
-                className="pb-3 border-b-2 border-transparent [&.active]:border-customGreen hover:border-customGreen2 transition-all duration-300"
+                className="[&.active]:border-customGreen hover:border-customGreen2 border-b-2 border-transparent pb-3 transition-all duration-300"
               >
                 About
               </Link>
@@ -38,7 +38,7 @@ export function Header({ toggleAside }: { toggleAside: () => void }) {
             <li>
               <Link
                 to="/projects"
-                className="pb-3 border-b-2 border-transparent [&.active]:border-customGreen hover:border-customGreen2 transition-all duration-300"
+                className="[&.active]:border-customGreen hover:border-customGreen2 border-b-2 border-transparent pb-3 transition-all duration-300"
               >
                 Projects
               </Link>
@@ -46,7 +46,7 @@ export function Header({ toggleAside }: { toggleAside: () => void }) {
             <li>
               <Link
                 to="/contact"
-                className="pb-3 border-b-2 border-transparent [&.active]:border-customGreen hover:border-customGreen2 transition-all duration-300"
+                className="[&.active]:border-customGreen hover:border-customGreen2 border-b-2 border-transparent pb-3 transition-all duration-300"
               >
                 Contact
               </Link>
@@ -56,7 +56,7 @@ export function Header({ toggleAside }: { toggleAside: () => void }) {
             href="https://github.com/programmingWithAzizbek"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1 rounded-full hover:bg-hover1 transition-colors duration-300"
+            className="hover:bg-hover1 rounded-full p-1 transition-colors duration-300"
           >
             <img src={githubIcon} alt="Icon of GitHub" width={24} height={24} />
           </a>

@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 function Contact() {
   return (
     <>
-      <div className="mt-12">Hello from Contact!</div>
+      <div className="pt-12 text-white">Hello from Contact!</div>
     </>
   );
 }

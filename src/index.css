@@ -4,11 +4,16 @@
   --color-backgroundAll: #1b1b1b;
   --color-customGreen: #39965f;
   --color-customGreen2: #30714a;
+  --color-customGreen3: #144629;
+  --color-customBlue: #1b3848;
+  --color-customGray: #545454;
   --color-line: #4b4b4b;
   --color-hover1: #313131;
   --color-textP1: #bbbbbb;
   --tracking-minusOne: -1px;
   --max-width-w1: 600px;
+  --min-width-pers: 259px;
+  --height-pers: 260px;
 }
 
 body {
@@ -19,4 +24,14 @@ body {
   background-color: var(--color-backgroundAll);
   background-attachment: fixed;
   /* background-blend-mode: overlay; */
+}
+
+.mailGradientBtn {
+  background: radial-gradient(
+    circle at top left,
+    rgba(66, 133, 244, 0.25) 0%,
+    rgba(234, 67, 53, 0.25) 35%,
+    rgba(251, 188, 5, 0.25) 70%,
+    rgba(52, 168, 83, 0.25) 100%
+  );
 }

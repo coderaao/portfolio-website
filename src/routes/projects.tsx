@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+/* import { createFileRoute } from "@tanstack/react-router";
 import {
   motion,
   MotionValue,
@@ -118,6 +118,21 @@ function StyleSheet() {
           transform: scaleX(0);
       }
   `}</style>
+  );
+}
+
+export const Route = createFileRoute("/projects")({
+  component: Projects,
+});
+ */
+
+import { createFileRoute } from "@tanstack/react-router";
+
+function Projects() {
+  return (
+    <>
+      <div className="pt-12 text-white">Hello from Projects!</div>
+    </>
   );
 }
 

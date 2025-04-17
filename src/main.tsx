@@ -21,6 +21,6 @@ if (!rootElement.innerHTML) {
     <StrictMode>
       <RouterProvider router={router} />
       <Analytics />
-    </StrictMode>
+    </StrictMode>,
   );
 }

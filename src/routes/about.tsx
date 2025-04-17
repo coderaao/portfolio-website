@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 function About() {
   return (
     <>
-      <div className="mt-12">Hello from About!</div>
+      <div className="pt-12 text-white">Hello from About!</div>
     </>
   );
 }

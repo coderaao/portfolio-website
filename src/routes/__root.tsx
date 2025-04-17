@@ -9,13 +9,13 @@ function RootComponent() {
 
   return (
     <>
-      <header className="bg-backgroundAll fixed z-20 w-full text-white py-2 px-3.5 border-b border-b-line">
+      <header className="bg-backgroundAll border-b-line fixed z-20 w-full border-b px-3.5 py-2 text-white">
         <Header toggleAside={() => setIsAsideOpen(!isAsideOpen)} />
       </header>
       <div className="md:flex">
         {isAsideOpen && (
           <aside
-            className={`bg-backgroundAll absolute md:relative w-72 z-10 border-r border-r-line transition-transform duration-300 ${
+            className={`bg-backgroundAll border-r-line absolute z-10 w-72 border-r transition-transform duration-300 md:relative ${
               isAsideOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >

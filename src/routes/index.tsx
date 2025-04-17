@@ -3,9 +3,9 @@ import { TypeAnimation } from "react-type-animation";
 
 function Index() {
   return (
-    <div className="flex justify-center items-center min-h-screen px-4">
-      <div className="text-white max-w-w1 w-full text-center flex flex-col items-center gap-y-4">
-        <h1 className="font-bold text-4xl">
+    <div className="flex min-h-screen items-center justify-center px-4">
+      <div className="max-w-w1 flex w-full flex-col items-center gap-y-4 text-center text-white">
+        <h1 className="text-4xl font-bold">
           Hello, I'm{" "}
           <TypeAnimation
             sequence={["Azizbek Akbarov", 1000]}
@@ -14,13 +14,13 @@ function Index() {
             repeat={Infinity}
           />
         </h1>
-        <p className="text-lg text-textP1">
+        <p className="text-textP1 text-lg">
           A results-driven web developer focused on creating and managing
           websites and web applications to achieve collective success.
         </p>
         <Link
           to="/projects"
-          className="bg-customGreen py-2 px-11 rounded-lg text-lg"
+          className="bg-customGreen rounded-lg px-11 py-2 text-lg"
         >
           Projects
         </Link>
